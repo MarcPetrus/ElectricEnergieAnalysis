@@ -1,10 +1,12 @@
 io
 matplotlib
 seaborn
+sklearn
 sklearn.model_selection 
 imblearn.over_sampling 
 sklearn.model_selection 
 sklearn.linear_model 
 sklearn.metrics 
+plotly
 plotly.express 
 scipy.stats 
