@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 
 # chemin vers le dossier contenant les données CSV
-datadir = "sources_donnees/"
+datadir = "../sources_donnees/"
 
 # variable titre ; utile car on utilise le titre à plusieurs endroits
 title="Projet Énergie"
@@ -11,7 +11,7 @@ title="Projet Énergie"
 
 @st.cache_data
 def getDf():
-    return pd.read_csv(datadir+"eco2mix-prepare-temperatures_indispo_prix.csv", sep=";", parse_dates=['datetime'], index_col=0)
+    return pd.read_csv("sources_donnees/eco2mix-prepare-temperatures_indispo_prix.csv", sep=";", parse_dates=['datetime'], index_col=0)
 
 @st.cache_data
 def getDfx():
