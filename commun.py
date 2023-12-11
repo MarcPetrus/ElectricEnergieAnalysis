@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 
 # chemin vers le dossier contenant les données CSV
-datadir = "../sources_donnees/"
+datadir = "/sources_donnees/"
 
 # variable titre ; utile car on utilise le titre à plusieurs endroits
 title="Projet Énergie"
