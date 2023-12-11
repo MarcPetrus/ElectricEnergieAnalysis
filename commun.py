@@ -15,7 +15,8 @@ def getDf():
 
 @st.cache_data
 def getDfx():
-    return pd.read_csv(datadir+'eco2mix-regional-cons-def.csv', sep=";", index_col=0)
+    #return pd.read_csv(datadir+'eco2mix-regional-cons-def.csv', sep=";", index_col=0)
+    return pd.read_csv("https://odre.opendatasoft.com/api/explore/v2.1/catalog/datasets/eco2mix-regional-cons-def/exports/csv?lang=fr&timezone=Europe%2FBerlin&use_labels=true&delimiter=%3B", sep=";")
 
 df = getDf()
 dfx = getDfx()
